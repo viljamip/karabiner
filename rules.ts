@@ -64,6 +64,7 @@ const rules: KarabinerRules[] = [
       i: app("Messages"),
       s: app("Spotify"),
       d: app("Things3"),
+      p: app("Preview"),
     },
 
     // w = "Window" via Raycast
