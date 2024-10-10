@@ -40,6 +40,7 @@ const rules: KarabinerRules[] = [
       },
     ],
   },
+  
   {
     "description": "⌨️ Macintosh Mods",
     "manipulators": [
@@ -293,7 +294,7 @@ const rules: KarabinerRules[] = [
       r: app("Microsoft PowerPoint"),
     },
 
-    // w = "Window" via Raycast
+    // w = "Window" via Rectangle
     w: {
       y: rectangle("previous-display"),
       o: rectangle("next-display"),
@@ -425,6 +426,25 @@ const rules: KarabinerRules[] = [
     l: {
       to: [{ key_code: "right_arrow" }],
     },
+    g: {
+      to: [
+        {
+        key_code: "up_arrow",
+        modifiers: ["right_command"],
+        },
+      ],
+    },
+    "left_shift": {
+      g: {
+        to: [
+          {
+          key_code: "down_arrow",
+          modifiers: ["right_command"],
+          },
+        ],
+      }
+    },
+  
     // c = Musi*c* which isn't "m" because we want it to be on the left hand
     c: {
       p: {
