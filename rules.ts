@@ -292,7 +292,6 @@ const rules: KarabinerRules[] = [
 
     // w = "Window" via Raycast
     w: {
-      c: open("raycast://extensions/raycast/window/center-window"),
       y: rectangle("previous-display"),
       o: rectangle("next-display"),
       k: rectangle("top-half"),
@@ -300,7 +299,8 @@ const rules: KarabinerRules[] = [
       h: rectangle("left-half"),
       l: rectangle("right-half"),
       f: rectangle("maximize"),
-      "delete_or_backspace": rectangle("center"),
+      c: rectangle("center"),
+      "delete_or_backspace": rectangle("restore"),
       u: {
         description: "Window: Previous Tab",
         to: [
@@ -395,7 +395,6 @@ const rules: KarabinerRules[] = [
     l: {
       to: [{ key_code: "right_arrow" }],
     },
-
     // c = Musi*c* which isn't "m" because we want it to be on the left hand
     c: {
       p: {
