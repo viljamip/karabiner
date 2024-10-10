@@ -328,6 +328,24 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
+      m: {
+        description: "Mission control",
+        to: [
+          {
+            key_code: "up_arrow",
+            modifiers: ["right_control"],
+          },
+        ],
+      },
+      e: {
+        description: "Expose",
+        to: [
+          {
+            key_code: "down_arrow",
+            modifiers: ["right_control"],
+          },
+        ],
+      },
     },
 
     // s = "System"
