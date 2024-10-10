@@ -288,6 +288,9 @@ const rules: KarabinerRules[] = [
       s: app("Spotify"),
       d: app("Things3"),
       p: app("Preview"),
+      e: app("Microsoft Excel"),
+      w: app("Microsoft Word"),
+      r: app("Microsoft PowerPoint"),
     },
 
     // w = "Window" via Raycast
