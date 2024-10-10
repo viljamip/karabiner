@@ -346,6 +346,15 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
+      d: {
+        description: "Show Desktop",
+        to: [
+          {
+            key_code: "f11",
+            modifiers: ["fn"],
+          },
+        ],
+      },
     },
 
     // s = "System"
