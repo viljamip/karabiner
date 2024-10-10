@@ -40,6 +40,229 @@ const rules: KarabinerRules[] = [
       },
     ],
   },
+  {
+    "description": "⌨️ Macintosh Mods",
+    "manipulators": [
+      {
+        "conditions": [
+          {
+            "type": "device_if",
+            "identifiers": [
+              {
+                "vendor_id": 1241
+              },
+              {
+                "vendor_id": 2131
+              },
+              {
+                "vendor_id": 9494
+              }
+            ]
+          }
+        ],
+        "from": {
+          "key_code": "left_option",
+          "modifiers": {
+            "optional": [
+              "any"
+            ]
+          }
+        },
+        "to": [
+          {
+            "key_code": "left_command"
+          }
+        ],
+        "type": "basic"
+      },
+      {
+        "conditions": [
+          {
+            "type": "device_if",
+            "identifiers": [
+              {
+                "vendor_id": 1241
+              },
+              {
+                "vendor_id": 2131
+              },
+              {
+                "vendor_id": 9494
+              }
+            ]
+          }
+        ],
+        "from": {
+          "key_code": "left_command",
+          "modifiers": {
+            "optional": [
+              "any"
+            ]
+          }
+        },
+        "to": [
+          {
+            "key_code": "left_option"
+          }
+        ],
+        "type": "basic"
+      },
+      {
+        "conditions": [
+          {
+            "type": "device_if",
+            "identifiers": [
+              {
+                "vendor_id": 1241
+              },
+              {
+                "vendor_id": 2131
+              },
+              {
+                "vendor_id": 9494
+              }
+            ]
+          }
+        ],
+        "from": {
+          "key_code": "right_option",
+          "modifiers": {
+            "optional": [
+              "any"
+            ]
+          }
+        },
+        "to": [
+          {
+            "key_code": "right_command"
+          }
+        ],
+        "type": "basic"
+      },
+      {
+        "conditions": [
+          {
+            "type": "device_if",
+            "identifiers": [
+              {
+                "vendor_id": 1241
+              },
+              {
+                "vendor_id": 2131
+              },
+              {
+                "vendor_id": 9494
+              }
+            ]
+          }
+        ],
+        "from": {
+          "key_code": "right_command",
+          "modifiers": {
+            "optional": [
+              "any"
+            ]
+          }
+        },
+        "to": [
+          {
+            "key_code": "right_option"
+          }
+        ],
+        "type": "basic"
+      },
+      {
+        "conditions": [
+          {
+            "type": "device_if",
+            "identifiers": [
+              {
+                "vendor_id": 1241
+              },
+              {
+                "vendor_id": 2131
+              },
+              {
+                "vendor_id": 9494
+              }
+            ]
+          }
+        ],
+        "from": {
+          "key_code": "non_us_backslash",
+          "modifiers": {
+            "optional": [
+              "any"
+            ]
+          }
+        },
+        "to": [
+          {
+            "key_code": "grave_accent_and_tilde"
+          }
+        ],
+        "type": "basic"
+      },
+      {
+        "conditions": [
+          {
+            "type": "device_if",
+            "identifiers": [
+              {
+                "vendor_id": 1241
+              },
+              {
+                "vendor_id": 2131
+              },
+              {
+                "vendor_id": 9494
+              }
+            ]
+          }
+        ],
+        "from": {
+          "key_code": "grave_accent_and_tilde",
+          "modifiers": {
+            "optional": [
+              "any"
+            ]
+          }
+        },
+        "to": [
+          {
+            "key_code": "non_us_backslash"
+          }
+        ],
+        "type": "basic"
+      }
+    ]
+  },
+  {
+    "description": "⌨️ Realforce",
+    "manipulators": [
+      {
+        "conditions": [
+          {
+            "type": "device_if",
+            "identifiers": [
+              {
+                "vendor_id": 2131
+              }
+            ]
+          }
+        ],
+        "from": {
+          "key_code": "application"
+        },
+        "to": [
+          {
+            "key_code": "fn"
+          }
+        ],
+        "type": "basic"
+      }
+    ]
+  },
   ...createHyperSubLayers({
     // b = "B"rowse
     b: {
