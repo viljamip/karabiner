@@ -278,7 +278,7 @@ const rules: KarabinerRules[] = [
     // o = "Open" applications
     o: {
       c: app("Microsoft Teams"),
-      b: app("Safari"),
+      b: app("Google Chrome"),
       n: app("Notes"),
       m: app("Microsoft Outlook"),
       t: app("Warp"),
